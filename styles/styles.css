@@ -11,7 +11,7 @@ body {
 .main-image-container {
   width: 70%;
   height: 100vh;
-  background-image: url("login-image.jpg");
+  background-image: url("../images/login-image.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +38,5 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 5px;
 }
