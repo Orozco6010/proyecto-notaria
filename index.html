@@ -1,106 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notaría Segunda de Medellín</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Notaría Segunda de Medellín</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <img src="images/notaria_logo.png" alt="Logo Notaría" />
+      </div>
 
-</head>
+      <div class="titulo-header">
+        <h1>Notaría Segunda de Medellín</h1>
+        <h3 class="notario">Carlos Olmedo Arias Rey</h3>
+      </div>
 
-<body>
+      <div class="escudo">
+        <img src="images/escudos_imagen.png" alt="Escudo" />
+      </div>
+    </header>
 
-  <header class="header">
-    <div class="logo">
-      <img src="logon2.png" alt="Logo Notaría">
-    </div>
+    <!-- NAV -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="pages/ESCRITURACION.html">Escrituración</a></li>
+        <li><a href="pages/REGISTRO_CIVIL.html">Registro Civil</a></li>
+        <li><a href="pages/AUTENTICACIONES.html">Autenticaciones</a></li>
+        <li>
+          <a href="pages/PREGUNTAS_FRECUENTES.html">Preguntas Frecuentes</a>
+        </li>
+        <li><a href="pages/CONTACTO.html">Contacto</a></li>
+      </ul>
+    </nav>
 
-    <h1>Notaría Segunda de Medellín</h1>
+    <!-- HERO CON TU IMAGEN -->
+    <section class="hero">
+      <img src="images/notaria_logo_2.jpg" class="hero-img" />
+      <div class="overlay">
+        <div class="hero-contenido">
+          <h2>Bienvenidos a la Notaría Segunda de Medellín</h2>
+          <p>
+            Seguridad jurídica, confianza y respaldo institucional al servicio
+            de la comunidad.
+          </p>
+          <a href="/pages/CONTACTO.html" class="btn-hero"
+            >Solicitar Información</a
+          >
+        </div>
+      </div>
+    </section>
 
-    <div class="escudo">
-      <img src="logosuper.png" alt="Escudo">
-    </div>
-  </header>
+    <!-- QUIENES SOMOS -->
+    <section class="quienes-somos">
+      <div class="contenedor">
+        <h2>Quiénes Somos</h2>
+        <p>
+          Somos una entidad comprometida con la transparencia, legalidad y
+          servicio oportuno. Nuestro equipo trabaja con responsabilidad para
+          garantizar seguridad jurídica en cada trámite notarial.
+        </p>
+      </div>
+    </section>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="ESCRITURACION.html">Escrituración</a></li>
-      <li><a href="REGISTRO_CIVIL.html">Registro Civil</a></li>
-      <li><a href="AUTENTICACIONES.html">Autenticaciones</a></li>
-      <li><a href="PREGUNTAS_FRECUENTES.html">Preguntas Frecuentes</a></li>
-      <li><a href="CONTACTO.html">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <section class="hero">
-    <h2>Seguridad Jurídica y Confianza</h2>
-    <p>Brindamos servicios notariales con responsabilidad y transparencia.</p>
-    <button>Solicitar Información</button>
-  </section>
-  <section class="quienes-somos">
-    <div class="contenedor">
-      <h2>Quiénes Somos</h2>
+    <!-- FOOTER -->
+    <footer>
       <p>
-        La Notaría Segunda de Medellín es una entidad comprometida con la
-        seguridad jurídica, la transparencia y el servicio a la comunidad.
-        Nuestro equipo de trabajo actúa con responsabilidad, ética y
-        profesionalismo, garantizando el cumplimiento de la normatividad vigente
-        en cada uno de los actos notariales.
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:notaria@notaria2medellin.com">
+          notaria@notaria2medellin.com
+        </a>
       </p>
-
-      <p>
-        Trabajamos para brindar confianza y respaldo legal a nuestros usuarios,
-        ofreciendo un servicio eficiente y oportuno en todos los trámites
-        relacionados con registro civil, autenticaciones, escrituración y demás
-        actuaciones notariales.
-      </p>
-    </div>
-  </section>
-
-
-  <section class="servicios">
-    <h2>Nuestros Servicios</h2>
-
-    <div class="cards">
-      <div class="card">Registro Civil y Archivo</div>
-      <div class="card">Autenticaciones</div>
-      <div class="card">Escrituración</div>
-      <div class="card">Declaraciones Extraproceso</div>
-      <div class="card">Testamento Abierto y Cerrado</div>
-      <div class="card">Insinuación de Donación</div>
-      <div class="card">Matrimonios</div>
-      <div class="card">Capitulaciones Maritales y Matrimoniales</div>
-      <div class="card">Declaración de Unión Marital de Hecho</div>
-      <div class="card">Declaración de Sociedad Patrimonial</div>
-      <div class="card">Divorcios</div>
-      <div class="card">Liquidación Sociedad Conyugal y Patrimonial</div>
-      <div class="card">Sucesiones</div>
-      <div class="card">Insolvencias</div>
-      <div class="card">Acuerdos de Apoyo, Con y Sin Representación</div>
-      <div class="card">Constitución de Patrimonio de Familia Inembargable</div>
-      <div class="card">Poderes Generales Por Escritura Pública</div>
-      <div class="card">Compraventa Por Escritura Pública</div>
-      <div class="card">Permiso de Salida del País Por Escritura Públcia</div>
-      <div class="card">Reglamentos de Propiedad Horizontal</div>
-    </div>
-  </section>
-
-  <footer>
-    <p>
-      <i class="fa-solid fa-envelope"></i>
-      <a href="mailto:notaria@notaria2medellin.com">
-        notaria@notaria2medellin.com
-      </a>
-    </p>
-
-    <p>📍 Calle 9 #43B-71, Medellín</p>
-    <p>📞 (604) 448-21-08</p>
-    <p>Horario: Lunes a Viernes 8:00am - 5:00pm</p>
-    <p> *Sábados, Sólo Turnos Programados*</p>
-  </footer>
-
-</body>
-
+      <p>📍 Calle 9 #43B-71, Medellín</p>
+      <p>📞 (604) 448-21-08</p>
+    </footer>
+  </body>
 </html>
