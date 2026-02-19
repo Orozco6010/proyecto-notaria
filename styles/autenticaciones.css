@@ -1,134 +1,148 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f6f8;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1f2f4a;
-  padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9edf3;
+    padding: 15px 40px;
 }
 
 .logo img {
-  height: 70px;
+    height: 70px;
 }
 
 .escudo img {
-  height: 60px;
+    height: 60px;
 }
 
 .titulo-header {
-  text-align: center;
+    text-align: center;
 }
 
 .titulo-header h1 {
-  color: white;
-  font-size: 26px;
-  margin: 0;
+    color: #1f2f4a;
+    font-size: 26px;
 }
 
 .notario {
-  color: #dcdcdc;
-  font-weight: 500;
-  margin-top: 5px;
+    color: #5a6a85;
+    font-weight: 500;
 }
 
-/* NAV */
+/* ================= NAV ================= */
+
 nav {
-  background-color: #e4e4e4;
-  padding: 10px 0;
+    background-color: #dcdcdc;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
 }
 
 nav a {
-  text-decoration: none;
-  color: #1f2f4a;
-  font-weight: 600;
-  padding: 8px 14px;
-  transition: 0.3s;
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #1f2f4a;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover,
 nav a.activo {
-  background-color: #1f2f4a;
-  color: white;
-  border-radius: 4px;
+    background-color: #1f2f4a;
+    color: white;
+    border-radius: 4px;
 }
 
-/* HERO AZUL */
-.hero-interno {
-  background-color: #1f2f4a;
-  color: white;
-  text-align: center;
-  padding: 35px 20px;
+/* ================= BANNER INTERNO ================= */
+
+.banner-interno {
+    background-color: #1f2f4a;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.hero-interno h2 {
-  font-size: 38px;
-  margin-bottom: 10px;
+.banner-interno h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-.hero-interno p {
-  font-size: 18px;
-  opacity: 0.9;
+.banner-interno p {
+    font-size: 18px;
+    opacity: 0.9;
 }
 
-/* CONTENIDO */
-.contenido {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
+/* ================= CONTENIDO ================= */
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* BLOQUES */
+.contenido-interno {
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+}
+
 .bloque {
-  background-color: #f0f0f0;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-left: 6px solid #1f2f4a;
-  border-radius: 6px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    border-left: 5px solid #1f2f4a;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
 .bloque h3 {
-  color: #1f2f4a;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
+    color: #1f2f4a;
 }
 
-.bloque p,
-.bloque li {
-  color: #333;
-  line-height: 1.6;
+.bloque p {
+    line-height: 1.6;
+    color: #444;
 }
 
 .bloque ul {
-  padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-/* FOOTER */
-.footer {
-  background-color: #1f2f4a;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+.bloque li {
+    margin-bottom: 8px;
 }
 
-.footer-contenido p {
-  margin: 10px 0;
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #1f2f4a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
 }
 
-.footer i {
-  margin-right: 8px;
-  color: white;
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
