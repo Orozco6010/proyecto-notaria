@@ -7,27 +7,39 @@ body {
 /* HEADER */
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #1f2a44;
-    color: white;
-    padding: 20px 40px;
-}
-
-.header h1 {
-    font-size: 26px;
-    flex: 1;
-    text-align: center;
+    padding: 18px 50px;
 }
 
 .logo img,
 .escudo img {
-    height: 60px;
+    height: 65px;
+}
+
+/* TÍTULO CENTRADO */
+.titulo-header {
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+.titulo-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.titulo-header p {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    opacity: 0.9;
 }
 
 /* NAV */
 nav {
-    background-color: #dcdcdc;
+    background-color: #e6e6e6;
     padding: 8px 0;
 }
 
@@ -42,7 +54,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 18px;
     color: #1f2a44;
     font-weight: 600;
     transition: 0.3s ease;
@@ -52,7 +64,6 @@ nav ul li a:hover,
 nav ul li a.activo {
     background-color: #1f2a44;
     color: white;
-    /* border-radius: 4px; */
 }
 
 /* HERO */
@@ -177,7 +188,7 @@ button:hover {
     background-color: #162033;
 }
 
-/* ANIMACIÓN SUAVE */
+/* ANIMACIÓN */
 .fade-in {
     animation: fadeInUp 1s ease forwards;
     opacity: 0;
