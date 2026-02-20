@@ -4,81 +4,96 @@ body {
     background-color: #f4f6f8;
 }
 
-/* HEADER */
+/* ================= HEADER (IGUAL A PREGUNTAS FRECUENTES) ================= */
+
 .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #1f2a44;
-    padding: 18px 50px;
+    align-items: center;
+    background-color: #e9edf3;
+    padding: 15px 40px;   /* igual que preguntas frecuentes */
 }
 
-.logo img,
+.logo img {
+    height: 70px;
+}
+
 .escudo img {
-    height: 65px;
+    height: 60px;
 }
 
-/* TÍTULO CENTRADO */
 .titulo-header {
     text-align: center;
-    color: white;
-    flex: 1;
 }
 
 .titulo-header h1 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: 600;
+    color: #1f2f4a;
+    font-size: 26px;
+    margin-bottom: 5px;   /* ESTA LÍNEA ES IMPORTANTE */
 }
 
-.titulo-header p {
-    margin: 4px 0 0 0;
-    font-size: 14px;
-    opacity: 0.9;
+.notario {
+    color: #5a6a85;
+    font-weight: 500;
+    margin: 0;           /* ESTA TAMBIÉN */
 }
 
-/* NAV */
+/* ================= NAV (IDÉNTICO A PREGUNTAS FRECUENTES) ================= */
+
 nav {
-    background-color: #e6e6e6;
-    padding: 8px 0;
+    background-color: #dcdcdc; /* CORREGIDO */
+}
+
+nav {
+    background-color: #dcdcdc;
 }
 
 nav ul {
     list-style: none;
-    margin: 0 auto;
-    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 40px;
 }
 
-nav ul li a {
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
     text-decoration: none;
-    padding: 10px 18px;
-    color: #1f2a44;
-    font-weight: 600;
-    transition: 0.3s ease;
+    color: #1f2f4a;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-nav ul li a:hover,
-nav ul li a.activo {
-    background-color: #1f2a44;
+nav a:hover,
+nav a.activo {
+    background-color: #1f2f4a;
     color: white;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero-interno {
+    background-color: #1f2f4a;
+    color: white;
+    padding: 60px 20px;   /* no 20px */
     text-align: center;
-    padding: 60px 20px;
-    background-color: white;
 }
 
 .hero-interno h2 {
-    font-size: 34px;
-    color: #1f2a44;
+    font-size: 32px; /* IGUAL */
+    margin-bottom: 10px;
 }
 
-/* CONTENIDO */
+.hero-interno p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ================= CONTENIDO ================= */
+
 .contenido {
     max-width: 1100px;
     margin: 50px auto;
@@ -111,7 +126,7 @@ nav ul li a.activo {
 
 .card i {
     font-size: 28px;
-    color: #1f2a44;
+    color: #1f2f4a; /* UNIFICADO */
     margin-bottom: 10px;
 }
 
@@ -123,7 +138,7 @@ nav ul li a.activo {
 .mapa h3 {
     text-align: center;
     margin-bottom: 20px;
-    color: #1f2a44;
+    color: #1f2f4a;
 }
 
 .mapa iframe {
@@ -144,7 +159,7 @@ nav ul li a.activo {
 .formulario h3 {
     text-align: center;
     margin-bottom: 30px;
-    color: #1f2a44;
+    color: #1f2f4a;
 }
 
 .campo {
@@ -168,12 +183,12 @@ nav ul li a.activo {
 
 .campo input:focus,
 .campo textarea:focus {
-    border-color: #1f2a44;
+    border-color: #1f2f4a;
     outline: none;
 }
 
 button {
-    background-color: #1f2a44;
+    background-color: #1f2f4a;
     color: white;
     padding: 12px;
     border: none;
@@ -207,7 +222,7 @@ button:hover {
 
 /* FOOTER */
 footer {
-    background-color: #1f2a44;
+    background-color: #1f2f4a; /* UNIFICADO */
     color: white;
     text-align: center;
     padding: 20px;
