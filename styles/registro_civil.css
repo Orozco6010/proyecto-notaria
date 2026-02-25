@@ -1,15 +1,4 @@
 /* =========================================================
-   RESET GENERAL
-   Elimina márgenes por defecto y define fuente base
-========================================================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* =========================================================
    FONDO CON IMAGEN Y OVERLAY OSCURO
    Crea la imagen fija con capa azul institucional
 ========================================================= */
@@ -39,79 +28,11 @@ body::before {
 }
 
 /* =========================================================
-   HEADER
-   Barra superior con logo, título y escudo
-========================================================= */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e9edf3;
-  padding: 15px 40px;
-}
-
-.logo img {
-  height: 70px;
-}
-
-.escudo img {
-  height: 60px;
-}
-
-.titulo-header {
-  text-align: center;
-}
-
-.titulo-header h1 {
-  color: #1f2f4a;
-  font-size: 26px;
-}
-
-.notario {
-  color: #5a6a85;
-  font-weight: 500;
-}
-
-/* =========================================================
-   NAV
-   Barra de navegación principal
-========================================================= */
-nav {
-  background-color: #dcdcdc;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  display: block;
-  padding: 14px 20px;
-  text-decoration: none;
-  color: #1f2f4a;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-/* Hover y página activa */
-nav a:hover,
-nav a.activo {
-  background-color: #1f2f4a;
-  color: white;
-}
-
-/* =========================================================
    BANNER INTERNO
    Sección azul debajo del menú
 ========================================================= */
 .banner-interno {
-  background-color: rgba(31, 47, 74, 0.9);
+  background-color: #1f2f4a;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -197,15 +118,15 @@ nav a.activo {
 
 /* Bloque especial solo para el título */
 .titulo-requisitos {
-  text-align: center;          /* Centra el texto */
-  border-left: none;           /* Quita la línea azul lateral */
+  text-align: center; /* Centra el texto */
+  border-left: none; /* Quita la línea azul lateral */
   background-color: rgba(255, 255, 255, 0.98);
 }
 
 /* Hace el texto más grande */
 .titulo-requisitos h3 {
-  font-size: 28px;             /* Tamaño más grande */
-  letter-spacing: 1px;         /* Espaciado elegante */
+  font-size: 28px; /* Tamaño más grande */
+  letter-spacing: 1px; /* Espaciado elegante */
   margin-bottom: 0;
 }
 
