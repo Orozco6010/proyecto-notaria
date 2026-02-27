@@ -1,0 +1,14 @@
+{
+  "requirements": [
+    {
+      "writing_name": "Hipoteca",
+      "requirements": [
+        " Copia de la escritura pública del propietario del bien inmueble que se va a hipotecar.",
+        "Certificado de libertad y tradición al día.",
+        "Certificado de libertad y tradición al día.",
+        "Carta de la entidad crediticia en la que se expresa el valor del crédito que se está concediendo, igual se procede si el acreedor es una persona natural.", "Paz y salvo del impuesto predial vigente.", "Ficha predial: Debe aportarse en caso de que en el paz y salvo de predial no cuente con la información del avalúo.", "Paz y salvo de valorización Municipal vigente.  Si el inmueble corresponde o está localizado en un municipio fuera de Medellín, deberán aportar además, paz y salvo de Valorización Departamental.", "Paz y salvo de administración por todo concepto vigente.", "Fotocopia de la cédula de ciudadanía del acreedor y del deudor hipotecario si son personas naturales; si se trata de un acreedor hipotecario que sea persona jurídica, el correspondiente certificado de existencia y representación."
+      ]
+    },
+    {}
+  ]
+}
