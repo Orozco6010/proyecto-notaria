@@ -13,14 +13,36 @@
         "Paz y salvo de administración por todo concepto vigente.",
         "Fotocopia de la cédula de ciudadanía del acreedor y del deudor hipotecario si son personas naturales; si se trata de un acreedor hipotecario que sea persona jurídica, el correspondiente certificado de existencia y representación."
       ],
-      "notes": "Alguna nota",
-      "recommendations": "Alguna recomendación"
+      "notes": "Cuando se trata de un crédito con una entidad bancaria, ésta se encarga de remitir con el usuario, la minuta correspondiente y el estudio de títulos.",
+      "recommendations": [
+        "Cuando se actúe como apoderado el poder debe ser otorgado ante la autoridad competente, y si se actúa con poder general debe contener nota de vigencia.",
+        "Si se trata de personas jurídicas debe aportar el certificado de la representación legal."
+      ]
     },
     {
-      "writing_name": "Otro título",
-      "requirements": ["Requerimiento 1", "Requerimiento 2"],
-      "notes": "Alguna nota",
-      "recommendations": "Alguna recomendación"
+      "writing_name": "Ampliación de hipoteca",
+      "requirements": [
+        "Fotocopia de las cédulas de ciudadanía.",
+        "Copia de la escritura de constitución de la Hipoteca anterior.",
+        "Paz y salvo de impuesto predial y valorización.",
+        "Paz y salvo de administración vigente, por todo concepto.",
+        "Ficha predial: Debe aportarse en caso de que en el paz y salvo de predial no cuente con la información de el avalúo.",
+        "Carta de aprobación."
+      ],
+
+      "recommendations": [
+        "Cuando se actúe como apoderado el poder debe ser otorgado ante la autoridad competente, y si se actúa con poder general debe contener nota de vigencia.",
+        "Si se trata de personas jurídicas debe aportar el certificado de la representación legal"
+      ]
+    },
+    {
+      "writing_name": "name",
+      "requirements": [
+        "requerimiento 1", "requerimiento 2"
+      ],
+      "recommendations": [
+        "recomendaciones"
+      ]
     }
   ]
 }
