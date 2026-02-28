@@ -1,11 +1,10 @@
 const setActiveLink = () => {
   const currentPath = window.location.pathname;
-
+  console.log({ currentPath });
   const links = document.querySelectorAll("nav a");
 
   links.forEach((link) => {
     const linkPath = new URL(link.href).pathname;
-
     if (currentPath === linkPath) {
       link.classList.add("activo");
     }
@@ -26,5 +25,5 @@ const basePath = window.location.pathname.includes("/proyecto-notaria/")
   ? "../"
   : "";
 
-loadComponent("header", `${basePath}components/header.html`);
-loadComponent("footer", `${basePath}components/footer.html`);
+loadComponent("header", "/components/header.html");
+loadComponent("footer", "/components/footer.html");
