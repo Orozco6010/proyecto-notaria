@@ -22,7 +22,9 @@ const loadComponent = async (elementId, path) => {
   }
 };
 
-const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
+const basePath = window.location.pathname.includes("/proyecto-notaria/")
+  ? "../"
+  : "";
 
 loadComponent("header", `${basePath}components/header.html`);
 loadComponent("footer", `${basePath}components/footer.html`);
