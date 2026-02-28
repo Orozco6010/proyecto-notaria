@@ -1,6 +1,7 @@
 const setActiveLink = () => {
   const currentPath = window.location.pathname;
-  console.log({ currentPath });
+  const isNotLocal = currentPath.split("/").includes("proyecto-notaria");
+  console.log({ isNotLocal });
   const links = document.querySelectorAll("nav a");
 
   links.forEach((link) => {
