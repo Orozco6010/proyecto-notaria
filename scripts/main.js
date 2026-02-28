@@ -22,5 +22,7 @@ const loadComponent = async (elementId, path) => {
   }
 };
 
-loadComponent("header", "/components/header.html");
-loadComponent("footer", "/components/footer.html");
+const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
+
+loadComponent("header", `${basePath}components/header.html`);
+loadComponent("footer", `${basePath}components/footer.html`);
