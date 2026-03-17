@@ -1,4 +1,4 @@
-/* ================= BANNER INTERNO ================= */
+/* ================= BANNER ================= */
 
 .banner-interno {
   background-color: #1f2f4a;
@@ -7,52 +7,95 @@
   text-align: center;
 }
 
-.banner-interno h2 {
-  font-size: 32px;
+/* ================= INTRO ================= */
+
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: auto;
+  color: #444;
+}
+
+/* ================= SERVICIOS ================= */
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.servicios {
+  padding: 50px 20px;
+  background: #f4f6f9;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card i {
+  font-size: 30px;
+  color: #1f2f4a;
   margin-bottom: 10px;
 }
 
-.banner-interno p {
-  font-size: 18px;
-  opacity: 0.9;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-/* ================= CONTENIDO ================= */
+/* ================= ACORDEÓN ================= */
+
+.contenido-interno {
+  padding: 60px 20px;
+}
 
 .contenedor {
   max-width: 1000px;
   margin: auto;
 }
 
-.contenido-interno {
-  padding: 60px 20px;
-  background-color: #f4f6f9;
-}
-
-.bloque {
-  background-color: white;
-  padding: 25px;
-  margin-bottom: 30px;
-  border-radius: 6px;
-  border-left: 5px solid #1f2f4a;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-}
-
-.bloque h3 {
+.acordeon-item {
   margin-bottom: 15px;
-  color: #1f2f4a;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.bloque p {
-  line-height: 1.6;
-  color: #444;
+.acordeon-header {
+  width: 100%;
+  padding: 18px;
+  background: #1f2f4a;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.bloque ul {
-  margin-left: 20px;
-  margin-top: 10px;
+.acordeon-contenido {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  transition: 0.4s;
+  padding: 0 15px;
 }
 
-.bloque li {
-  margin-bottom: 8px;
+.acordeon-contenido p,
+.acordeon-contenido ul {
+  margin: 15px 0;
+}
+
+/* ACTIVO */
+.activo-acordeon .acordeon-contenido {
+  max-height: 300px;
+  padding: 15px;
 }

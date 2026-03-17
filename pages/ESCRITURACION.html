@@ -49,9 +49,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <section class="contenido-interno">
 <div class="contenedor">
 
-<div class="buscador-tramites">
+<!-- <div class="buscador-tramites">
 <input type="text" id="buscarTramite" placeholder="🔎 Buscar trámite notarial...">
-</div>
+</div> -->
 
 <div class="grid-tramites">
 
@@ -258,21 +258,7 @@ panel.style.maxHeight=panel.scrollHeight+"px";
 
 }
 
-document.getElementById("buscarTramite").addEventListener("keyup",function(){
 
-let filtro=this.value.toLowerCase();
-
-let tramites=document.querySelectorAll(".tramite");
-
-tramites.forEach(function(tramite){
-
-let texto=tramite.innerText.toLowerCase();
-
-tramite.style.display=texto.includes(filtro) ? "block" : "none";
-
-});
-
-});
 
 </script>
 

@@ -4,32 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autenticaciones | Notaría Segunda de Medellín</title>
+
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/autenticaciones.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link
-      rel="icon"
-      href="https://notaria2demedellin.com.co/wp-content/uploads/2022/05/cropped-Logo-RGB-1500-192x192.png"
-      sizes="192x192"
-    />
   </head>
+
   <body>
-    <!-- HEADER -->
+    <!-- HEADER (NO TOCAR) -->
     <header>
       <div class="logo">
-        <img src="../images/notaria_logo.png" alt="Logo Notaría" />
+        <img src="../images/notaria_logo.png" />
       </div>
       <div class="titulo-header">
         <h1>Notaría Segunda de Medellín</h1>
         <h3 class="notario">Carlos Olmedo Arias Rey</h3>
       </div>
       <div class="escudo">
-        <img src="../images/escudos_imagen.png" alt="Escudo" />
+        <img src="../images/escudos_imagen.png" />
       </div>
     </header>
+
+    <!-- NAV (NO TOCAR) -->
     <nav>
       <ul>
         <li><a href="../index.html">Inicio</a></li>
@@ -47,56 +47,115 @@
       </ul>
     </nav>
 
-    <!-- ================= BANNER INTERNO ================= -->
+    <!-- BANNER -->
     <section class="banner-interno">
       <h2>Autenticaciones</h2>
       <p>Seguridad jurídica en cada firma y documento.</p>
     </section>
 
-    <!-- ================= CONTENIDO ================= -->
-    <section class="contenido-interno">
+    <!-- INTRO -->
+    <section class="intro">
       <div class="contenedor">
-        <div class="bloque">
-          <h3>¿Qué es una Autenticación?</h3>
-          <p>
-            La autenticación es el acto mediante el cual el notario certifica
-            que una firma fue puesta personalmente por quien dice ser su autor,
-            previa verificación de su identidad. Este trámite otorga validez,
-            respaldo y seguridad jurídica a documentos privados destinados a
-            producir efectos legales.
-          </p>
+        <p>
+          En la Notaría Segunda de Medellín ofrecemos servicios de autenticación
+          que garantizan la validez legal de documentos y firmas, brindando
+          confianza y respaldo jurídico a cada trámite.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS (CARDS) -->
+    <section class="servicios">
+      <div class="contenedor grid-servicios">
+        <div class="card">
+          <i class="fa-solid fa-signature"></i>
+          <h4>Autenticación de Firmas</h4>
+          <p>Validación de firmas en documentos privados.</p>
         </div>
 
-        <div class="bloque">
-          <h3>Servicios que ofrecemos</h3>
-          <ul>
-            <li>Autenticación de firmas en documentos privados</li>
-            <li>Reconocimiento de contenido y firma</li>
-            <li>Autenticación de copias</li>
-            <li>Presentaciones personales</li>
-            <li>Permisos para salida de menores del país</li>
-            <li>Declaraciones extrajuicio</li>
-          </ul>
+        <div class="card">
+          <i class="fa-solid fa-file-lines"></i>
+          <h4>Reconocimiento</h4>
+          <p>Certificación de contenido y firma.</p>
         </div>
 
-        <div class="bloque">
-          <h3>Requisitos Generales</h3>
-          <ul>
-            <li>Documento original que se desea autenticar</li>
-            <li>
-              Cédula de ciudadanía original o documento válido de identificación
-            </li>
-            <li>Presencia personal del firmante ante el notario</li>
-            <li>
-              En caso de actuar en representación, documento que acredite la
-              calidad
-            </li>
-          </ul>
+        <div class="card">
+          <i class="fa-solid fa-copy"></i>
+          <h4>Copias Autenticadas</h4>
+          <p>Verificación de copias frente a originales.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-user-check"></i>
+          <h4>Presentación Personal</h4>
+          <p>Comparecencia ante notario.</p>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ACORDEÓN -->
+    <section class="contenido-interno">
+      <div class="contenedor">
+        <!-- ITEM -->
+        <div class="acordeon-item">
+          <button class="acordeon-header">
+            ¿Qué es una autenticación?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="acordeon-contenido">
+            <p>
+              Es el acto mediante el cual el notario certifica que una firma fue
+              puesta por la persona que dice ser su autor, previa verificación
+              de identidad.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="acordeon-item">
+          <button class="acordeon-header">
+            Requisitos generales
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="acordeon-contenido">
+            <ul>
+              <li>Documento original que se desea autenticar, se firma acá directamente en la Notaría antes de autenticar</li>
+              <li>
+                Cédula original, pasaporte vigente con el sello de entrada no
+                superior a los 90 días, cédula de extranjeria ó permiso por
+                protección temporal
+              </li>
+              <li>Presencia del firmante</li>
+              <li>Soporte de representación (si aplica)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="acordeon-item">
+          <button class="acordeon-header">
+            Tipos de autenticaciones
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="acordeon-contenido">
+            <ul>
+              <li>
+                Firmas en documentos privados, sea solo reconocimiento de firma
+                o reconocimiento de firma y contenido
+              </li>
+              <li>
+                Autenticación de copias, "El documento es copia fiel del
+                original"
+              </li>
+              <li>Declaraciones extrajuicio</li>
+              <li>Permisos de salida de menores por documento privado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (NO TOCAR) -->
     <footer>
       <p>
         <i class="fa-solid fa-envelope"></i>
@@ -108,6 +167,21 @@
       <p>📞 (604) 448-21-08</p>
     </footer>
 
-    <script src="../scripts/main.js"></script>
+    <!-- JS ACORDEÓN -->
+    <script>
+      const items = document.querySelectorAll(".acordeon-header");
+
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          const activo = document.querySelector(".activo-acordeon");
+
+          if (activo && activo !== item.parentElement) {
+            activo.classList.remove("activo-acordeon");
+          }
+
+          item.parentElement.classList.toggle("activo-acordeon");
+        });
+      });
+    </script>
   </body>
 </html>
