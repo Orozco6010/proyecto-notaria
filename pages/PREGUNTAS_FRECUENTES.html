@@ -1,142 +1,125 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preguntas Frecuentes | Notaría Segunda de Medellín</title>
-    <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/preguntas_frecuentes.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="icon"
-      href="https://notaria2demedellin.com.co/wp-content/uploads/2022/05/cropped-Logo-RGB-1500-192x192.png"
-      sizes="192x192"
-    />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-      <div class="logo">
-        <img src="../images/notaria_logo.png" alt="Logo Notaría" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preguntas Frecuentes | Notaría Segunda de Medellín</title>
+
+  <link rel="stylesheet" href="../styles/global.css"/>
+  <link rel="stylesheet" href="../styles/preguntas_frecuentes.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../images/notaria_logo.png"/>
+  </div>
+  <div class="titulo-header">
+    <h1>Notaría Segunda de Medellín</h1>
+    <h3 class="notario">Carlos Olmedo Arias Rey</h3>
+  </div>
+  <div class="escudo">
+    <img src="../images/escudos_imagen.png"/>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="../pages/ESCRITURACION.html">Escrituración</a></li>
+    <li><a href="../pages/REGISTRO_CIVIL.html">Registro Civil</a></li>
+    <li><a href="../pages/AUTENTICACIONES.html">Autenticaciones</a></li>
+    <li><a href="../pages/PREGUNTAS_FRECUENTES.html" class="activo">Preguntas Frecuentes</a></li>
+    <li><a href="../pages/CONTACTO.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<section class="banner-interno">
+  <div class="contenedor">
+    <h2>Preguntas Frecuentes</h2>
+    <p>Resolvemos las dudas más comunes.</p>
+  </div>
+</section>
+
+<section class="contenido-interno">
+  <div class="contenedor">
+
+    <div class="grid-tramites" id="faq-container"></div>
+
+  </div>
+</section>
+
+<footer>
+  <p><i class="fa-solid fa-envelope"></i> notaria@notaria2medellin.com</p>
+  <p>📍 Calle 9 #43B-71, Medellín</p>
+  <p>📞 (604) 448-21-08</p>
+</footer>
+
+<script>
+const data = [
+  {
+    pregunta: "¿Necesito cita para realizar un trámite?",
+    respuesta: "Se recomienda agendar para escrituras y trámites especiales."
+  },
+  {
+    pregunta: "¿Qué documentos debo presentar para autenticar una firma?",
+    respuesta: "Documento original sin firmar y cédula original."
+  },
+  {
+    pregunta: "¿Cuánto cuesta un trámite notarial?",
+    respuesta: "Depende del trámite, tarifas reguladas por el Estado."
+  },
+  {
+    pregunta: "¿Puedo autenticar una copia?",
+    respuesta: "Sí, presentando el original."
+  },
+  {
+    pregunta: "¿Cuánto tiempo tarda una escritura pública?",
+    respuesta: "Depende de la complejidad."
+  }
+];
+
+const container = document.getElementById("faq-container");
+
+data.forEach(item => {
+  container.innerHTML += `
+    <div class="tramite">
+      <button class="acordeon">${item.pregunta}</button>
+      <div class="panel">
+        <p>${item.respuesta}</p>
       </div>
-      <div class="titulo-header">
-        <h1>Notaría Segunda de Medellín</h1>
-        <h3 class="notario">Carlos Olmedo Arias Rey</h3>
-      </div>
-      <div class="escudo">
-        <img src="../images/escudos_imagen.png" alt="Escudo" />
-      </div>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../pages/ESCRITURACION.html">Escrituración</a></li>
-        <li><a href="../pages/REGISTRO_CIVIL.html">Registro Civil</a></li>
-        <li><a href="../pages/AUTENTICACIONES.html">Autenticaciones</a></li>
-        <li>
-          <a href="../pages/PREGUNTAS_FRECUENTES.html" class="activo"
-            >Preguntas Frecuentes</a
-          >
-        </li>
-        <li><a href="../pages/CONTACTO.html">Contacto</a></li>
-      </ul>
-    </nav>
+    </div>
+  `;
+});
 
-    <!-- ================= BANNER INTERNO (IGUAL A REGISTRO CIVIL) ================= -->
-    <section class="banner-interno">
-      <div class="contenedor">
-        <h2>Preguntas Frecuentes</h2>
-        <p>
-          Resolvemos las dudas más comunes sobre nuestros servicios notariales.
-        </p>
-      </div>
-    </section>
+const acc = document.querySelectorAll(".acordeon");
 
-    <!-- ================= CONTENIDO ================= -->
-    <section class="contenido-interno">
-      <div class="contenedor">
-        <div class="bloque">
-          <h3>¿Necesito cita para realizar un trámite?</h3>
-          <p>
-            Algunos trámites pueden realizarse por orden de llegada; sin
-            embargo, para escrituras públicas, matrimonios civiles y otros actos
-            especiales, se recomienda agendar previamente para garantizar
-            atención oportuna.
-          </p>
-        </div>
+acc.forEach(btn => {
+  btn.addEventListener("click", function () {
 
-        <div class="bloque">
-          <h3>¿Qué documentos debo presentar para autenticar una firma?</h3>
-          <p>
-            Debe presentar el documento original sin firmar y su cédula de
-            ciudadanía original. La firma debe realizarse en presencia del
-            notario o funcionario autorizado.
-          </p>
-        </div>
+    acc.forEach(other => {
+      if (other !== this) {
+        other.classList.remove("activo");
+        other.nextElementSibling.style.maxHeight = null;
+      }
+    });
 
-        <div class="bloque">
-          <h3>¿Cuánto cuesta un trámite notarial?</h3>
-          <p>
-            Las tarifas notariales están reguladas por el Estado y son de
-            obligatorio cumplimiento en todas las notarías del país. El valor
-            depende del tipo de trámite.
-          </p>
-        </div>
+    this.classList.toggle("activo");
 
-        <div class="bloque">
-          <h3>¿Puedo autenticar una copia?</h3>
-          <p>
-            Sí. Se puede autenticar una copia siempre que se presente el
-            documento original para su cotejo.
-          </p>
-        </div>
+    const panel = this.nextElementSibling;
 
-        <div class="bloque">
-          <h3>¿Cuánto tiempo tarda una escritura pública?</h3>
-          <p>
-            El tiempo varía según la complejidad del trámite y la documentación
-            aportada.
-          </p>
-        </div>
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 30 + "px";
+    }
 
-        <div class="bloque">
-          <h3>¿Cómo obtengo una copia del Registro Civil?</h3>
-          <p>Puede solicitarla presentando su documento de identidad.</p>
-        </div>
+  });
+});
+</script>
 
-        <div class="bloque">
-          <h3>¿Se puede otorgar poder sin estar presente?</h3>
-          <p>
-            No. El otorgante debe comparecer personalmente ante el notario para
-            firmar el documento y validar su identidad.
-          </p>
-        </div>
-
-        <div class="bloque">
-          <h3>¿Qué horario maneja la notaría?</h3>
-          <p>
-            Nuestro horario de atención es de lunes a viernes de 8:00 a.m. a
-            5:00 p.m.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <p>
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:notaria@notaria2medellin.com">
-          notaria@notaria2medellin.com
-        </a>
-      </p>
-      <p>📍 Calle 9 #43B-71, Medellín</p>
-      <p>📞 (604) 448-21-08</p>
-    </footer>
-
-    <script src="../scripts/main.js"></script>
-  </body>
+</body>
 </html>

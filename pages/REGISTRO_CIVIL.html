@@ -196,14 +196,11 @@
   var acc = document.getElementsByClassName("acordeon");
 
   for (var i = 0; i < acc.length; i++) {
+
     acc[i].addEventListener("click", function () {
 
-      for (var j = 0; j < acc.length; j++) {
-        acc[j].classList.remove("activo");
-        acc[j].nextElementSibling.style.maxHeight = null;
-      }
-
       this.classList.toggle("activo");
+
       var panel = this.nextElementSibling;
 
       if (panel.style.maxHeight) {
@@ -211,7 +208,9 @@
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
       }
+
     });
+
   }
 </script>
 
