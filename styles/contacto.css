@@ -3,12 +3,12 @@
 .hero-interno {
   background-color: #1f2f4a;
   color: white;
-  padding: 60px 20px; /* no 20px */
+  padding: 60px 20px;
   text-align: center;
 }
 
 .hero-interno h2 {
-  font-size: 32px; /* IGUAL */
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -41,9 +41,7 @@
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -53,11 +51,58 @@
 
 .card i {
   font-size: 28px;
-  color: #1f2f4a; /* UNIFICADO */
+  color: #1f2f4a;
   margin-bottom: 10px;
 }
 
-/* MAPA */
+/* ================= ACORDEÓN ================= */
+
+.acordeon .acordeon-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.telefono-principal {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #1f2f4a;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.acordeon-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.10s ease;
+  font-size: 10px;
+}
+
+.acordeon.activo .acordeon-contenido {
+  max-height: 180px;
+}
+
+
+/* ================= CORREO ================= */
+
+.correo a {
+  display: block;
+  word-break: break-word;
+  font-size: 14px;
+}
+
+/* ================= MAPA ================= */
+
 .mapa {
   margin-bottom: 60px;
 }
@@ -75,7 +120,8 @@
   border-radius: 8px;
 }
 
-/* FORMULARIO */
+/* ================= FORMULARIO ================= */
+
 .formulario {
   background: white;
   padding: 40px;
@@ -123,14 +169,14 @@ button {
   width: 100%;
   cursor: pointer;
   font-size: 16px;
-  transition: background 0.3s ease;
 }
 
 button:hover {
   background-color: #162033;
 }
 
-/* ANIMACIÓN */
+/* ================= ANIMACIÓN ================= */
+
 .fade-in {
   animation: fadeInUp 1s ease forwards;
   opacity: 0;
@@ -147,9 +193,10 @@ button:hover {
   }
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer {
-  background-color: #1f2f4a; /* UNIFICADO */
+  background-color: #1f2f4a;
   color: white;
   text-align: center;
   padding: 20px;
