@@ -1,5 +1,37 @@
 /* ================= HERO ================= */
 
+body::before {
+  background:
+    linear-gradient(rgba(20, 40, 70, 0.75), rgba(20, 40, 70, 0.75)),
+    url("../images/contacto-notaria.png");
+}
+
+/* ================= FONDO CONTACTO (ESTILO REGISTRO CIVIL) ================= */
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background:
+    linear-gradient(rgba(20, 40, 70, 0.75), rgba(20, 40, 70, 0.75)),
+    url("../images/contacto-notaria.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
+
 .hero-interno {
   background-color: #1f2f4a;
   color: white;
@@ -23,6 +55,7 @@
   max-width: 1100px;
   margin: 50px auto;
   padding: 0 20px;
+  background: transparent;
 }
 
 /* TARJETAS */
@@ -44,6 +77,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -54,6 +93,8 @@
   color: #1f2f4a;
   margin-bottom: 10px;
 }
+
+/* ================= ACORDEÓN ================= */
 
 /* ================= ACORDEÓN ================= */
 
@@ -81,15 +122,40 @@
   text-decoration: underline;
 }
 
+/* CONTENEDOR DEL ACORDEÓN */
 .acordeon-contenido {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.10s ease;
-  font-size: 10px;
+  transition: max-height 0.3s ease;
+  width: 100%;
 }
 
+/* CUANDO SE ABRE */
 .acordeon.activo .acordeon-contenido {
-  max-height: 180px;
+  max-height: 200px; /* altura fija para no dañar tarjetas */
+  overflow-y: auto; /* 🔥 scroll interno */
+  padding-right: 5px;
+}
+
+/* LISTA DE EXTENSIONES */
+.acordeon-contenido ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* CADA ITEM */
+.acordeon-contenido li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.3;
+}
+
+/* ÚLTIMO ITEM SIN LÍNEA */
+.acordeon-contenido li:last-child {
+  border-bottom: none;
 }
 
 
