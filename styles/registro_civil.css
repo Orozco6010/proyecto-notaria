@@ -35,7 +35,7 @@ body::before {
 /* ================= BANNER ================= */
 
 .banner-interno {
-  background-color: #1f2f4a;
+  background: rgba(31, 47, 74, 0.9);
   color: white;
   padding: 70px 20px;
   text-align: center;
