@@ -9,8 +9,9 @@ body::before {
 /* ================= FONDO CONTACTO (ESTILO REGISTRO CIVIL) ================= */
 
 body {
-  position: relative;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 body::before {
@@ -56,6 +57,7 @@ body::before {
   margin: 50px auto;
   padding: 0 20px;
   background: transparent;
+  flex: 1;
 }
 
 /* TARJETAS */
@@ -74,7 +76,9 @@ body::before {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card {
@@ -93,8 +97,6 @@ body::before {
   color: #1f2f4a;
   margin-bottom: 10px;
 }
-
-/* ================= ACORDEÓN ================= */
 
 /* ================= ACORDEÓN ================= */
 
@@ -119,7 +121,8 @@ body::before {
 }
 
 .toggle-btn:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: white;
 }
 
 /* CONTENEDOR DEL ACORDEÓN */
@@ -157,7 +160,6 @@ body::before {
 .acordeon-contenido li:last-child {
   border-bottom: none;
 }
-
 
 /* ================= CORREO ================= */
 

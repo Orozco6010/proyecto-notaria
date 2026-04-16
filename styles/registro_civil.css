@@ -9,8 +9,9 @@
 /* ================= FONDO ================= */
 
 body {
-  position: relative;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 body::before {
@@ -55,11 +56,12 @@ body::before {
 
 .contenido-interno {
   padding: 70px 20px;
+  flex: 1;
 }
 
 /* CONTENEDOR */
 .contenedor {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -196,7 +198,6 @@ body::before {
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
-
   .banner-interno h2 {
     font-size: 26px;
   }
@@ -220,7 +221,6 @@ body::before {
   .acordeon {
     font-size: 16px;
   }
-
 }
 
 /* ================= BLOQUES DESTACADOS ================= */

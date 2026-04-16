@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 /* ================= BANNER ================= */
 .banner-interno {
   background-color: #1f2f4a;
@@ -15,6 +21,7 @@
 .contenido-interno {
   padding: 60px 20px;
   background-color: #f4f6f9;
+  flex: 1;
 }
 
 /* ================= GRID ================= */
@@ -28,7 +35,7 @@
   background: white;
   border-radius: 8px;
   border-left: 5px solid #1f2f4a;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: 0.25s;
 }

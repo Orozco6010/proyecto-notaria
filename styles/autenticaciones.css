@@ -1,8 +1,9 @@
 /* ================= FONDO AUTENTICACIONES ================= */
 
 body {
-  position: relative;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 body::before {
@@ -39,6 +40,7 @@ body::before {
   padding: 40px 20px;
   text-align: center;
   background: transparent;
+  flex: 1;
 }
 
 .intro p {

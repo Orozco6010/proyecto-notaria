@@ -1,96 +1,97 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Preguntas Frecuentes | Notaría Segunda de Medellín</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas Frecuentes | Notaría Segunda de Medellín</title>
 
-  <link rel="stylesheet" href="../styles/global.css"/>
-  <link rel="stylesheet" href="../styles/preguntas_frecuentes.css"/>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/preguntas_frecuentes.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link
-      rel="icon"
-      href="images/icono.png"
-      sizes="192x192"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-</head>
+    <link rel="icon" href="../images/icono.png" sizes="192x192" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../images/notaria_logo.png" />
+      </div>
+      <div class="titulo-header">
+        <h1>Notaría Segunda de Medellín</h1>
+        <h3 class="notario">Carlos Olmedo Arias Rey</h3>
+      </div>
+      <div class="escudo">
+        <img src="../images/escudos_imagen.png" />
+      </div>
+    </header>
 
-<header>
-  <div class="logo">
-    <img src="../images/notaria_logo.png"/>
-  </div>
-  <div class="titulo-header">
-    <h1>Notaría Segunda de Medellín</h1>
-    <h3 class="notario">Carlos Olmedo Arias Rey</h3>
-  </div>
-  <div class="escudo">
-    <img src="../images/escudos_imagen.png"/>
-  </div>
-</header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pages/ESCRITURACION.html">Escrituración</a></li>
+        <li><a href="../pages/REGISTRO_CIVIL.html">Registro Civil</a></li>
+        <li><a href="../pages/AUTENTICACIONES.html">Autenticaciones</a></li>
+        <li>
+          <a href="../pages/PREGUNTAS_FRECUENTES.html" class="activo"
+            >Preguntas Frecuentes</a
+          >
+        </li>
+        <li><a href="../pages/CONTACTO.html">Contacto</a></li>
+      </ul>
+    </nav>
 
-<nav>
-  <ul>
-    <li><a href="../index.html">Inicio</a></li>
-    <li><a href="../pages/ESCRITURACION.html">Escrituración</a></li>
-    <li><a href="../pages/REGISTRO_CIVIL.html">Registro Civil</a></li>
-    <li><a href="../pages/AUTENTICACIONES.html">Autenticaciones</a></li>
-    <li><a href="../pages/PREGUNTAS_FRECUENTES.html" class="activo">Preguntas Frecuentes</a></li>
-    <li><a href="../pages/CONTACTO.html">Contacto</a></li>
-  </ul>
-</nav>
+    <section class="banner-interno">
+      <div class="contenedor">
+        <h2>Preguntas Frecuentes</h2>
+        <p>Resolvemos las dudas más comunes.</p>
+      </div>
+    </section>
 
-<section class="banner-interno">
-  <div class="contenedor">
-    <h2>Preguntas Frecuentes</h2>
-    <p>Resolvemos las dudas más comunes.</p>
-  </div>
-</section>
+    <section class="contenido-interno">
+      <div class="contenedor">
+        <div class="grid-tramites" id="faq-container"></div>
+      </div>
+    </section>
 
-<section class="contenido-interno">
-  <div class="contenedor">
+    <footer>
+      <p><i class="fa-solid fa-envelope"></i> notaria@notaria2medellin.com</p>
+      <p>📍 Calle 9 #43B-71, Medellín</p>
+      <p>📞 (604) 448-21-08</p>
+    </footer>
 
-    <div class="grid-tramites" id="faq-container"></div>
+    <script>
+      const data = [
+        {
+          pregunta: "¿Necesito cita para realizar un trámite?",
+          respuesta:
+            "Se recomienda agendar para escrituras y trámites especiales.",
+        },
+        {
+          pregunta: "¿Qué documentos debo presentar para autenticar una firma?",
+          respuesta: "Documento original sin firmar y cédula original.",
+        },
+        {
+          pregunta: "¿Cuánto cuesta un trámite notarial?",
+          respuesta: "Depende del trámite, tarifas reguladas por el Estado.",
+        },
+        {
+          pregunta: "¿Puedo autenticar una copia?",
+          respuesta: "Sí, presentando el original.",
+        },
+        {
+          pregunta: "¿Cuánto tiempo tarda una escritura pública?",
+          respuesta: "Depende de la complejidad.",
+        },
+      ];
 
-  </div>
-</section>
+      const container = document.getElementById("faq-container");
 
-<footer>
-  <p><i class="fa-solid fa-envelope"></i> notaria@notaria2medellin.com</p>
-  <p>📍 Calle 9 #43B-71, Medellín</p>
-  <p>📞 (604) 448-21-08</p>
-</footer>
-
-<script>
-const data = [
-  {
-    pregunta: "¿Necesito cita para realizar un trámite?",
-    respuesta: "Se recomienda agendar para escrituras y trámites especiales."
-  },
-  {
-    pregunta: "¿Qué documentos debo presentar para autenticar una firma?",
-    respuesta: "Documento original sin firmar y cédula original."
-  },
-  {
-    pregunta: "¿Cuánto cuesta un trámite notarial?",
-    respuesta: "Depende del trámite, tarifas reguladas por el Estado."
-  },
-  {
-    pregunta: "¿Puedo autenticar una copia?",
-    respuesta: "Sí, presentando el original."
-  },
-  {
-    pregunta: "¿Cuánto tiempo tarda una escritura pública?",
-    respuesta: "Depende de la complejidad."
-  }
-];
-
-const container = document.getElementById("faq-container");
-
-data.forEach(item => {
-  container.innerHTML += `
+      data.forEach((item) => {
+        container.innerHTML += `
     <div class="tramite">
       <button class="acordeon">${item.pregunta}</button>
       <div class="panel">
@@ -98,33 +99,30 @@ data.forEach(item => {
       </div>
     </div>
   `;
-});
+      });
 
-const acc = document.querySelectorAll(".acordeon");
+      const acc = document.querySelectorAll(".acordeon");
 
-acc.forEach(btn => {
-  btn.addEventListener("click", function () {
+      acc.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          acc.forEach((other) => {
+            if (other !== this) {
+              other.classList.remove("activo");
+              other.nextElementSibling.style.maxHeight = null;
+            }
+          });
 
-    acc.forEach(other => {
-      if (other !== this) {
-        other.classList.remove("activo");
-        other.nextElementSibling.style.maxHeight = null;
-      }
-    });
+          this.classList.toggle("activo");
 
-    this.classList.toggle("activo");
+          const panel = this.nextElementSibling;
 
-    const panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 30 + "px";
-    }
-
-  });
-});
-</script>
-
-</body>
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 30 + "px";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
