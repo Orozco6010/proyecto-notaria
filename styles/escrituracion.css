@@ -15,7 +15,7 @@ body::before {
 
   background:
     linear-gradient(rgba(20, 40, 70, 0.75), rgba(20, 40, 70, 0.75)),
-    url("../images/escrituracion-notaria.png"); /* 👈 TU IMAGEN */
+    url("../images/fondo-esc.jpg"); /* 👈  IMAGEN */
 
   background-size: cover;
   background-position: center;
