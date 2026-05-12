@@ -298,3 +298,28 @@ body::before {
   color: #1f2f4a;
   font-size: 12px;
 }
+
+/* ================= BOTÓN PDF ================= */
+
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  background: #b42323;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-pdf:hover {
+  background: #8e1b1b;
+  transform: translateY(-2px);
+}
+
+.btn-pdf i {
+  font-size: 18px;
+}
