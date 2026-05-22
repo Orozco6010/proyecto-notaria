@@ -20,10 +20,12 @@
       <div class="logo">
         <img src="../images/notaria_logo.png" />
       </div>
+
       <div class="titulo-header">
         <h1>Notaría Segunda de Medellín</h1>
         <h3 class="notario">Carlos Olmedo Arias Rey</h3>
       </div>
+
       <div class="escudo">
         <img src="../images/escudos_imagen.png" />
       </div>
@@ -36,9 +38,9 @@
         <li><a href="../pages/REGISTRO_CIVIL.html">Registro Civil</a></li>
         <li><a href="../pages/AUTENTICACIONES.html">Autenticaciones</a></li>
         <li>
-          <a href="../pages/PREGUNTAS_FRECUENTES.html" class="activo"
-            >Preguntas Frecuentes</a
-          >
+          <a href="../pages/PREGUNTAS_FRECUENTES.html" class="activo">
+            Preguntas Frecuentes
+          </a>
         </li>
         <li><a href="../pages/CONTACTO.html">Contacto</a></li>
       </ul>
@@ -47,13 +49,149 @@
     <section class="banner-interno">
       <div class="contenedor">
         <h2>Preguntas Frecuentes</h2>
-        <p>Resolvemos las dudas más comunes.</p>
+        <p>Resolvemos las dudas más comunes de nuestros usuarios.</p>
       </div>
     </section>
 
     <section class="contenido-interno">
       <div class="contenedor">
-        <div class="grid-tramites" id="faq-container"></div>
+        <div class="faq-container">
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Qué es una escritura pública?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                La escritura pública es un documento autorizado por un notario,
+                en el cual se consignan actos jurídicos, declaraciones o contratos
+                que requieren formalidad legal.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Qué documentos necesito para autenticar una firma?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Debe presentar el documento original sin firmar y la cédula de
+                ciudadanía original del firmante.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Es obligatorio asistir personalmente a la notaría?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Sí. En la mayoría de los trámites notariales se requiere la
+                presencia personal de los interesados para validar identidad,
+                firma y consentimiento.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Cuánto cuesta una escritura pública?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Las tarifas notariales son reguladas por la Superintendencia de
+                Notariado y Registro y varían según el tipo de trámite y la
+                cuantía del acto.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Cómo puedo obtener una copia del registro civil?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Puede solicitarla directamente en la notaría presentando su
+                documento de identidad o los datos del registro civil.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Qué es una declaración extrajuicio?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Es una manifestación realizada bajo juramento ante notario para
+                dejar constancia de hechos o situaciones personales.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Se puede autenticar una copia de un documento?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Sí. Debe presentar el documento original para que la notaría
+                pueda validar que la copia coincide fielmente.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Cuánto tiempo tarda un trámite notarial?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                El tiempo depende del trámite y de la documentación aportada.
+                Algunos procesos son inmediatos y otros requieren validaciones
+                adicionales.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Puedo realizar trámites si soy extranjero?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Sí. Los extranjeros pueden realizar trámites notariales
+                presentando su pasaporte o documento válido de identificación.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Qué horario maneja la notaría?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                El horario de atención puede variar. Se recomienda consultar
+                previamente los canales oficiales de la notaría.
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -64,62 +202,26 @@
     </footer>
 
     <script>
-      const data = [
-        {
-          pregunta: "¿Necesito cita para realizar un trámite?",
-          respuesta:
-            "Se recomienda agendar para escrituras y trámites especiales.",
-        },
-        {
-          pregunta: "¿Qué documentos debo presentar para autenticar una firma?",
-          respuesta: "Documento original sin firmar y cédula original.",
-        },
-        {
-          pregunta: "¿Cuánto cuesta un trámite notarial?",
-          respuesta: "Depende del trámite, tarifas reguladas por el Estado.",
-        },
-        {
-          pregunta: "¿Puedo autenticar una copia?",
-          respuesta: "Sí, presentando el original.",
-        },
-        {
-          pregunta: "¿Cuánto tiempo tarda una escritura pública?",
-          respuesta: "Depende de la complejidad.",
-        },
-      ];
+      const preguntas = document.querySelectorAll(".faq-question");
 
-      const container = document.getElementById("faq-container");
+      preguntas.forEach((pregunta) => {
+        pregunta.addEventListener("click", () => {
+          const activa = document.querySelector(".faq-question.active");
 
-      data.forEach((item) => {
-        container.innerHTML += `
-    <div class="tramite">
-      <button class="acordeon">${item.pregunta}</button>
-      <div class="panel">
-        <p>${item.respuesta}</p>
-      </div>
-    </div>
-  `;
-      });
+          if (activa && activa !== pregunta) {
+            activa.classList.remove("active");
+            activa.nextElementSibling.style.maxHeight = null;
+          }
 
-      const acc = document.querySelectorAll(".acordeon");
+          pregunta.classList.toggle("active");
 
-      acc.forEach((btn) => {
-        btn.addEventListener("click", function () {
-          acc.forEach((other) => {
-            if (other !== this) {
-              other.classList.remove("activo");
-              other.nextElementSibling.style.maxHeight = null;
-            }
-          });
+          const respuesta = pregunta.nextElementSibling;
 
-          this.classList.toggle("activo");
-
-          const panel = this.nextElementSibling;
-
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
+          if (respuesta.style.maxHeight) {
+            respuesta.style.maxHeight = null;
           } else {
-            panel.style.maxHeight = panel.scrollHeight + 30 + "px";
+            respuesta.style.maxHeight =
+              respuesta.scrollHeight + 30 + "px";
           }
         });
       });
