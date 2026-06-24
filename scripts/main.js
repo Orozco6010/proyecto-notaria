@@ -1,40 +1,55 @@
-/* ============================================================
-   main.js — Notaría Segunda de Medellín
-   Script principal unificado para todas las páginas
-   ============================================================ */
+
 
 document.addEventListener("DOMContentLoaded", () => {
+const hero = document.querySelector(".hero");
 
-  /* ----------------------------------------------------------
-     1. HERO SLIDESHOW (index.html)
-  ---------------------------------------------------------- */
-  const hero = document.querySelector(".hero");
-
-  if (hero) {
-    const slides = [
-      { imagen: "./images/imagen1.png",  posicion: "center 60%" },
-      { imagen: "./images/imagen2.png",  posicion: "center 25%" },
-      { imagen: "./images/imagen3.png",  posicion: "center 45%" },
-      { imagen: "./images/imagen4.jpg",  posicion: "center 40%" }
-    ];
-
-    let indice = 0;
-
-    function cambiarImagen() {
-      hero.style.backgroundImage = `
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url('${slides[indice].imagen}')
-      `;
-      hero.style.backgroundPosition = slides[indice].posicion;
-      indice = (indice + 1) % slides.length;
+const slides = [
+    {
+        imagen: "./images/imagen1.png",
+        posicion: "center 60%"
+    },
+    {
+        imagen: "./images/imagen2.png",
+        posicion: "center 25%"
+    },
+    {
+        imagen: "./images/imagen3.png",
+        posicion: "center 45%"
+    },
+    {
+        imagen: "./images/imagen4.jpg",
+        posicion: "center 40%"
     }
+];
 
-    cambiarImagen();
-    setInterval(cambiarImagen, 5000);
-  }
+let indice = 0;
+
+function cambiarImagen() {
+
+    hero.style.backgroundImage = `
+        linear-gradient(
+            rgba(0,0,0,0.35),
+            rgba(0,0,0,0.35)
+        ),
+        url('${slides[indice].imagen}')
+    `;
+
+    hero.style.backgroundPosition = slides[indice].posicion;
+
+    indice++;
+
+    if (indice >= slides.length) {
+        indice = 0;
+    }
+}
+
+cambiarImagen();
+
+setInterval(cambiarImagen, 5000);
+});
 
   /* ----------------------------------------------------------
-     2. ACORDEÓN REGISTRO CIVIL — una sola sección abierta
+    2. ACORDEÓN REGISTRO CIVIL — una sola sección abierta
         (.acordeon / .panel)
   ---------------------------------------------------------- */
   const botonesRegistro = document.querySelectorAll(".grid-tramites .acordeon");
@@ -61,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ----------------------------------------------------------
-     3. ACORDEÓN AUTENTICACIONES — una sola sección abierta
+    3. ACORDEÓN AUTENTICACIONES — una sola sección abierta
         (.acordeon-header / .acordeon-item)
   ---------------------------------------------------------- */
   const itemsAutenticaciones = document.querySelectorAll(".acordeon-item .acordeon-header");
@@ -81,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ----------------------------------------------------------
-     4. MODAL ESCRITURACIÓN
+    4. MODAL ESCRITURACIÓN
         (.acordeon → abre modal con el contenido del panel)
   ---------------------------------------------------------- */
   const botonesEscrituracion = document.querySelectorAll(".acordeon");
@@ -115,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ----------------------------------------------------------
-     5. ACORDEÓN PREGUNTAS FRECUENTES
+    5. ACORDEÓN PREGUNTAS FRECUENTES
         (.faq-question / .faq-answer) — una sola abierta
   ---------------------------------------------------------- */
   const preguntas = document.querySelectorAll(".faq-question");
@@ -143,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ----------------------------------------------------------
-     6. ACORDEÓN CONTACTO
+    6. ACORDEÓN CONTACTO
         (.acordeon / .toggle-btn) — toggle extensiones
   ---------------------------------------------------------- */
   const acordeonContacto = document.querySelector(".acordeon");
@@ -158,4 +173,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-});
+
