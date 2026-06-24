@@ -42,6 +42,7 @@
             Preguntas Frecuentes
           </a>
         </li>
+        <li><a href="../pages/NUESTRO_EQUIPO.html">Nuestro Equipo</a></li>
         <li><a href="../pages/CONTACTO.html">Contacto</a></li>
       </ul>
     </nav>
@@ -200,31 +201,6 @@
       <p>📍 Calle 9 #43B-71, Medellín</p>
       <p>📞 (604) 448-21-08</p>
     </footer>
-
-    <script>
-      const preguntas = document.querySelectorAll(".faq-question");
-
-      preguntas.forEach((pregunta) => {
-        pregunta.addEventListener("click", () => {
-          const activa = document.querySelector(".faq-question.active");
-
-          if (activa && activa !== pregunta) {
-            activa.classList.remove("active");
-            activa.nextElementSibling.style.maxHeight = null;
-          }
-
-          pregunta.classList.toggle("active");
-
-          const respuesta = pregunta.nextElementSibling;
-
-          if (respuesta.style.maxHeight) {
-            respuesta.style.maxHeight = null;
-          } else {
-            respuesta.style.maxHeight =
-              respuesta.scrollHeight + 30 + "px";
-          }
-        });
-      });
-    </script>
+    <script src="../scripts/main.js"></script>
   </body>
 </html>

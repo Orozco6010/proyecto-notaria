@@ -38,6 +38,7 @@
         <li>
           <a href="../pages/PREGUNTAS_FRECUENTES.html">Preguntas Frecuentes</a>
         </li>
+        <li><a href="../pages/NUESTRO_EQUIPO.html">Nuestro Equipo</a></li>
         <li><a href="../pages/CONTACTO.html" class="activo">Contacto</a></li>
       </ul>
     </nav>
@@ -166,19 +167,6 @@
       <p>Horario: Lunes a Viernes 8:00am - 5:00pm</p>
       <p><b>Sábados, sólo turnos programados!</b></p>
     </footer>
-
-    <!-- JS ACORDEÓN -->
-    <script>
-      const acordeon = document.querySelector(".acordeon");
-      const btn = acordeon.querySelector(".toggle-btn");
-
-      btn.addEventListener("click", () => {
-        acordeon.classList.toggle("activo");
-
-        btn.textContent = acordeon.classList.contains("activo")
-          ? "Ocultar extensiones"
-          : "Ver extensiones";
-      });
-    </script>
+    <script src="../scripts/main.js"></script>
   </body>
 </html>

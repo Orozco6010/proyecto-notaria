@@ -1,0 +1,195 @@
+/* ================= BANNER ================= */
+
+.banner-interno {
+  background-color: #1f2f4a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.banner-interno h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.banner-interno p {
+  font-size: 16px;
+  color: #c8d0e0;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ================= INTRO ================= */
+
+.intro-equipo {
+  background-color: #f4f6fa;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro-equipo p {
+  max-width: 820px;
+  margin: auto;
+  color: #3a4a63;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ================= NOTARIO PRINCIPAL ================= */
+
+.seccion-notario {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.card-notario {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #1f2f4a;
+  border-radius: 10px;
+  padding: 35px 40px;
+  color: white;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card-notario-icono {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-notario-icono i {
+  font-size: 36px;
+  color: white;
+}
+
+.card-notario-info h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.card-notario-info .cargo {
+  display: inline-block;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.card-notario-info p {
+  font-size: 14px;
+  color: #c8d0e0;
+  line-height: 1.6;
+}
+
+/* ================= ÁREAS ================= */
+
+.seccion-areas {
+  padding: 60px 20px;
+  background-color: #f4f6fa;
+}
+
+.titulo-seccion {
+  text-align: center;
+  color: #1f2f4a;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.grid-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.card-area {
+  background-color: white;
+  border-radius: 8px;
+  padding: 28px 24px;
+  border-top: 4px solid #1f2f4a;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card-area:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(31, 47, 74, 0.12);
+}
+
+.card-area i {
+  font-size: 28px;
+  color: #1f2f4a;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.card-area h4 {
+  font-size: 16px;
+  color: #1f2f4a;
+  margin-bottom: 10px;
+}
+
+.card-area p {
+  font-size: 14px;
+  color: #5a6a85;
+  line-height: 1.6;
+}
+
+/* ================= VALORES ================= */
+
+.seccion-valores {
+  padding: 50px 20px;
+  background-color: #1f2f4a;
+}
+
+.seccion-valores .titulo-seccion {
+  color: white;
+}
+
+.grid-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.valor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 24px 30px;
+  width: 160px;
+  text-align: center;
+  color: white;
+  transition: background-color 0.25s;
+}
+
+.valor-item:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.valor-item i {
+  font-size: 26px;
+  color: #a8c0e8;
+}
+
+.valor-item span {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}

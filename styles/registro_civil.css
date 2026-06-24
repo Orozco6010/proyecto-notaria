@@ -169,6 +169,15 @@ body::before {
   content: "–";
 }
 
+.acordeon.activo {
+  background: #1f2f4a;
+  color: white;
+}
+
+.acordeon.activo i {
+  color: white;
+}
+
 /* PANEL */
 .panel {
   padding: 0 20px;

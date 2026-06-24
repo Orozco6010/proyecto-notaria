@@ -39,6 +39,7 @@
       <li>
         <a href="../pages/PREGUNTAS_FRECUENTES.html">Preguntas Frecuentes</a>
       </li>
+      <li><a href="../pages/NUESTRO_EQUIPO.html">Nuestro Equipo</a></li>
       <li><a href="../pages/CONTACTO.html">Contacto</a></li>
     </ul>
   </nav>
@@ -1256,45 +1257,7 @@
       <div id="modalBody" class="modal-body"></div>
     </div>
   </div>
-
-  <script>
-    const botones = document.querySelectorAll(".acordeon");
-    const modal = document.getElementById("modal");
-    const modalBody = document.getElementById("modalBody");
-    const modalTitulo = document.getElementById("modalTitulo");
-    const cerrar = document.getElementById("cerrarModal");
-    const overlay = document.querySelector(".modal-overlay");
-
-    botones.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const panel = btn.nextElementSibling;
-
-        // 👉 copiar contenido
-        modalBody.innerHTML = panel.innerHTML;
-
-        // 👉 copiar icono + texto del botón
-        modalTitulo.innerHTML = `
-      <h2>${btn.innerHTML}</h2>
-    `;
-
-        // abrir modal
-        modal.classList.add("activo");
-        document.body.style.overflow = "hidden";
-      });
-    });
-
-    function cerrarModal() {
-      modal.classList.remove("activo");
-      document.body.style.overflow = "auto";
-    }
-
-    cerrar.addEventListener("click", cerrarModal);
-    overlay.addEventListener("click", cerrarModal);
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") cerrarModal();
-    });
-  </script>
+  <script src="../scripts/main.js"></script>
 </body>
 
 </html>
