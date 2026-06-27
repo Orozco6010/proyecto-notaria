@@ -23,8 +23,7 @@ body::before {
   height: 100%;
 
   background:
-    /* linear-gradient(rgba(20, 40, 70, 0.75), rgba(20, 40, 70, 0.75)), */
-    url("../images/fondo-reg.jpg");
+    /* linear-gradient(rgba(20, 40, 70, 0.75), rgba(20, 40, 70, 0.75)), */ url("../images/fondo-reg.jpg");
 
   background-size: cover;
   background-position: center;
@@ -116,21 +115,6 @@ body::before {
   align-items: start;
 }
 
-/* ================= ACORDEON ================= */
-
-.tramite {
-  background: white;
-  border-radius: 10px;
-  border-left: 5px solid #1f2f4a;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  transition: 0.3s ease;
-}
-
-.tramite:hover {
-  transform: translateY(-4px);
-}
-
 /* BOTÓN */
 .acordeon {
   background: #f4f6f8;
@@ -153,29 +137,6 @@ body::before {
 
 .acordeon:hover {
   background: #e9edf3;
-}
-
-/* ICONO + / - */
-.acordeon::after {
-  content: "+";
-  font-size: 22px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.acordeon.activo::after {
-  content: "–";
-}
-
-.acordeon.activo {
-  background: #1f2f4a;
-  color: white;
-}
-
-.acordeon.activo i {
-  color: white;
 }
 
 /* PANEL */

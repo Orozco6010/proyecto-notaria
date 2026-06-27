@@ -85,3 +85,95 @@ footer a {
 footer p {
   margin: 8px 0;
 }
+
+/*=========================================
+=            BOTÓN ASISTENTE IA           =
+=========================================*/
+
+.btn-asistente{
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 22px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    background: #1f355e;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.20);
+
+    transition: .30s;
+
+    z-index: 9999;
+
+}
+
+.btn-asistente:hover{
+
+    transform: translateY(-4px);
+
+    background:#28457a;
+
+}
+
+.btn-asistente i{
+
+    font-size:22px;
+
+}
+
+.btn-asistente span{
+
+    white-space: nowrap;
+
+}
+
+/* ----------- Responsive ----------- */
+
+@media(max-width:768px){
+
+.btn-asistente{
+
+    width:60px;
+
+    height:60px;
+
+    padding:0;
+
+    justify-content:center;
+
+}
+
+.btn-asistente span{
+
+    display:none;
+
+}
+
+.btn-asistente i{
+
+    font-size:24px;
+
+}
+
+}

@@ -14,7 +14,7 @@ body::before {
   height: 100%;
 
   background:
-    /* linear-gradient(rgba(20, 40, 70, 0.75), rgba(20, 40, 70, 0.75)), */
+    linear-gradient(rgba(30, 61, 107, 0.75), rgba(20, 40, 70, 0.75)),
     url("../images/fondo-esc.jpg"); /* 👈  IMAGEN */
 
   background-size: cover;
@@ -76,11 +76,11 @@ body::before {
 .acordeon {
   background: #f4f6f8;
   cursor: pointer;
-  padding: 20px;
+  padding: 25px;
   width: 100%;
   border: none;
-  text-align: left;
-  font-size: 18px;
+  text-align: center;
+  font-size: 19px;
   font-weight: bold;
   color: #1f2f4a;
   position: relative;
@@ -91,21 +91,8 @@ body::before {
 }
 
 .acordeon:hover {
-  background: #e9edf3;
+  background: #f4f4f6;
 }
-
-/* .acordeon::after {
-  content: "+";
-  font-size: 22px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.acordeon.activo::after {
-  content: "–";
-} */
 
 .panel {
   display: none;
@@ -219,3 +206,173 @@ body::before {
 .modal-body {
   padding-top: 10px;
 }
+
+/*==================================================
+BUSCADOR INTELIGENTE
+==================================================*/
+
+.buscador-contenedor{
+
+    margin-bottom:45px;
+
+    text-align:center;
+
+}
+
+.buscador-contenedor h2{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.buscador-contenedor p{
+
+    color:white;
+
+    opacity:.9;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
+}
+
+.buscador{
+
+    background:white;
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:18px 25px;
+
+    gap:15px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.20);
+
+    transition:.3s;
+
+}
+
+.buscador:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.buscador:focus-within{
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.buscador i{
+
+    color:#1f2f4a;
+
+    font-size:20px;
+
+}
+
+.buscador input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    font-size:18px;
+
+    background:transparent;
+
+}
+
+.contador-resultados{
+
+    margin-top:18px;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+/*====================================
+INFO DEL BUSCADOR
+====================================*/
+
+.info-buscador{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    color:white;
+
+    font-weight:600;
+
+    font-size:17px;
+
+}
+
+/*====================================
+SIN RESULTADOS
+====================================*/
+
+.sin-resultados{
+
+    display:none;
+
+    margin:60px auto;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:45px;
+
+    max-width:500px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.20);
+
+}
+
+.sin-resultados i{
+
+    font-size:45px;
+
+    color:#1f2f4a;
+
+    margin-bottom:20px;
+
+}
+
+.sin-resultados h3{
+
+    color:#1f2f4a;
+
+    margin-bottom:10px;
+
+}
+
+.sin-resultados p{
+
+    color:#666;
+
+}
+
+
